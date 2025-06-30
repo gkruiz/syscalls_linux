@@ -22,7 +22,7 @@ necesitaremos un archivo de configuracion para poder compilar nuestro kernel , e
 cp -v /boot/config-$(uname -r) .config
 ``` 
 
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Practica1_1S2025/imagenes/imagen6.png" width="500px" height="300px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen6.png" width="500px" height="300px" align="center">
 
 posterior a eso , se nos copiara ese archivo .conf ,tendremos que ejecutar el siguiente comando para tener limipio nuestro ambiente de compilacion:
 
@@ -102,7 +102,7 @@ fakeroot make -j3
 
 una vez empiece esto se vera como en la imagen:
 
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Practica1_1S2025/imagenes/imagen1.png" width="500px" height="300px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen1.png" width="500px" height="300px" align="center">
 
 
 esto tardara como una hora dependiendo los cpu que usemos 
@@ -123,17 +123,17 @@ make install
 make headers_install
 ``` 
 
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Practica1_1S2025/imagenes/imagen7.png" width="500px" height="300px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen7.png" width="500px" height="300px" align="center">
 
 
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Practica1_1S2025/imagenes/imagen8.png" width="500px" height="300px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen8.png" width="500px" height="300px" align="center">
 
 
 #### 5.) Prueba de funcionamiento
 
 cuando ya lo hallamos instalado , tendremos que reiniciar nuestra maquina, y en eso tendremos que presionar la tecla "Shift" ,con ella habilitaremos el grub y tendremos que seleccionar el kernel que nosotros modificamos:
 
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Practica1_1S2025/imagenes/imagen14.png" width="500px" height="300px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen14.png" width="500px" height="300px" align="center">
 
 
 #### 1.) Creacion de syscall (funcionalidad real)
@@ -228,10 +228,10 @@ make install
 make headers_install
 ``` 
 
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Practica1_1S2025/imagenes/imagen7.png" width="500px" height="300px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen7.png" width="500px" height="300px" align="center">
 
 
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Practica1_1S2025/imagenes/imagen8.png" width="500px" height="300px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen8.png" width="500px" height="300px" align="center">
 
 
 

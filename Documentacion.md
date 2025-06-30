@@ -22,7 +22,7 @@ necesitaremos un archivo de configuracion para poder compilar nuestro kernel , e
 cp -v /boot/config-$(uname -r) .config
 ``` 
 
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen6.png?raw=true" width="500px" height="300px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen6.png" width="500px" height="300px" align="center">
 
 posterior a eso , se nos copiara ese archivo .conf ,tendremos que ejecutar el siguiente comando para tener limipio nuestro ambiente de compilacion:
 
@@ -102,7 +102,7 @@ fakeroot make -j3
 
 una vez empiece esto se vera como en la imagen:
 
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen1.png?raw=true" width="500px" height="300px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen1.png" width="500px" height="300px" align="center">
 
 
 esto tardara como una hora dependiendo los cpu que usemos 
@@ -123,17 +123,17 @@ make install
 make headers_install
 ``` 
 
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen7.png?raw=true" width="500px" height="300px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen7.png" width="500px" height="300px" align="center">
 
 
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen8.png?raw=true" width="500px" height="300px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen8.png" width="500px" height="300px" align="center">
 
 
 #### 5.) Prueba de funcionamiento
 
 cuando ya lo hallamos instalado , tendremos que reiniciar nuestra maquina, y en eso tendremos que presionar la tecla "Shift" ,con ella habilitaremos el grub y tendremos que seleccionar el kernel que nosotros modificamos:
 
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen14.png?raw=true" width="500px" height="300px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen14.png" width="500px" height="300px" align="center">
 
 
 #### 1.) Creacion de syscall (funcionalidad real)
@@ -228,10 +228,10 @@ make install
 make headers_install
 ``` 
 
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen7.png?raw=true" width="500px" height="300px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen7.png" width="500px" height="300px" align="center">
 
 
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/imagen8.png?raw=true" width="500px" height="300px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen8.png" width="500px" height="300px" align="center">
 
 
 
@@ -335,41 +335,41 @@ cuando ya terminamos nuestra api procedemos a consumirla desde nuestra vista , p
 ahora mostraremos como quedo la interfaz implementando no solo la syscall de kill process sino tambien las otras llamadas que fueron solicitadas 
 
 ##### 1) Vista Inicial
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG1.png?raw=true" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG1.png" width="600px" align="center">
 
 nos muestra la cantidad de ram total usada en nuestro sistema en tiempo real, ademas de que nos muestra lo mismo pero para el cpu , ademas de eso nos da la cantidad de procesos activos 
 
 ##### 2) Vista RAM
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG2.png?raw=true" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG2.png" width="600px" align="center">
 
 aca tenemos el grafico de lineas para mostrar el historial de RAM de nuestro sistema donde si fluctua pues esto se vera reflejado en el grafico
 
 
 ##### 3) Vista CPU
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG3.png?raw=true" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG3.png" width="600px" align="center">
 
 aca tenemos el grafico de lineas para mostrar el historial de CPU de nuestro sistema donde si fluctua pues esto se vera reflejado en el grafico
 
 
 ##### 4) Vista RX y TX
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG4.png?raw=true" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG4.png" width="600px" align="center">
 
 aca tenemos el grafico de lineas para mostrar el historial de RX (KB recibidos) y TX (KB transmitidos) de nuestro sistema donde si fluctua pues esto se vera reflejado en el grafico
 
 ##### 5) Dashboard Procesos
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG5.png?raw=true" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG5.png" width="600px" align="center">
 
 aca tenemos el dashboard para mostrar la informacion individual de los procesos, para nuestro caso mostramos el % de RAM usado en el momento , tambien % de RAM en el tiempo , % de CPU usado en el momento , % de CPU usado en el tiempo y por ultimo la cantidad de energia usada en el tiempo 
 
 
 ##### 6) Dashboard Procesos Listado
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG6.png?raw=true" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG6.png" width="600px" align="center">
 
 tambien tenemos el listado de los procesos donde podremos ver lo que es el PID , Nombre, CPU, RAM , Prioridad ,Inicio del proceso , UID y por ultimo el consumo de energia, para poder visualizar la info de nuestro proceso en los dashboard solo tendremos que dar click en ver para que nos carque los cambios 
 
 
 ##### 7) Terminar Proceso
-<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG7.png?raw=true" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG7.png" width="600px" align="center">
 
 luego para terminar un proceso ,tendremos que dar click en terminar y automaticamente este se terminara en nuestro sistema y nos mostrara el mensaje que tiene la imagen 
 

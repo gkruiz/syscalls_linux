@@ -13,10 +13,130 @@ El siguiente proyecto tuvo como finalidad el poner en practica los conocimientos
 
 ### Pasos usados para el desarrollo del proyecto
 
+#### 1.) Configuraciones basicas
+
+necesitaremos un archivo de configuracion para poder compilar nuestro kernel , el cual obtendremos del sistema en el que estamos,es fundamental el usar este comando ya que si copiamos un archivo de otro sistema no nos funcionara, con el siguiente comando obtendremos el archivo y lo copiara en la carpeta de nuestro nuevo kernel :
+
+```bash
+#Copia el archivo de conf a nuestro kernel 
+cp -v /boot/config-$(uname -r) .config
+``` 
+
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen6.png" width="500px" height="300px" align="center">
+
+posterior a eso , se nos copiara ese archivo .conf ,tendremos que ejecutar el siguiente comando para tener limipio nuestro ambiente de compilacion:
+
+```bash
+#Limpia nuestro ambiente de trabajo 
+make clean
+``` 
+
+luego para dejar en nuestra configuracion de compilacion los drivers y archivos necesarios y quitando todo aquello que no usaremos ,ejecutaremos el siguiente comando :
+
+```bash
+#Elimina compilacion innecesaria
+make oldconfig
+make localmodconfig
+``` 
+
+por ulitmo deshabilitamos ciertos certificados que no nos serviran para nuestro caso:
+
+```bash
+#Deshabilita certificados
+scripts/config --disable SYSTEM_TRUSTED_KEYS
+scripts/config --disable SYSTEM_REVOCATION_KEYS
+scripts/config --set-str CONFIG_SYSTEM_TRUSTED_KEYS ""
+scripts/config --set-str CONFIG_SYSTEM_REVOCATION_KEYS ""
+``` 
+
+con esto tendremos ya listo nuestro ambiente para poder compilar nuestro kernel , ahora tendremos que proceder a crear nuestra syscall e implementarla para luego poder compilar nuestro nuevo kernel
+
+ 
+
+#### 3.) Creacion de nuestra nueva syscall 
+tendremos que crear un archivo llamado "syscalls_usac.h" en esta ruta: "./linux-6.8/kernel/"
+en este archivo tendremos que colocar la declaracion de nuestra syscall, que vendria a ser el codigo fuente
+para nuestro caso crearemos una syscall sencilla llamada hola_mundo , que no recibe parametros unicamente imprime un mensaje el codigo seria el siguiente:
+
+```bash
+#Definicion simple de syscall
+SYSCALL_DEFINE0(hola_mundo)
+{
+    printk(KERN_INFO "Hola mundo desde el kernel!\n");
+    return 0;
+}
+``` 
+
+
+luego de haber creado nuestro archivo lo unico que tendremos que hacer es agregar esta nueva llamada primero a la tabla de syscalls que se encuentra en esta ruta: "linux-6.8/arch/x86/entry/syscalls/syscall_64.tbl"  y agregaremos una nueva linea con la siguiente forma :
+```bash
+#Linea ejemplo tabla syscall
+548 common hola_mundo sys_hola_mundo
+``` 
+
+tambien tendremos que declarar nuestra funcion en los siguientes archivos : "linux-6.8/arch/x86/include/asm/syscalls.h" y 
+"linux-6.8/kernel/sys.c" , en ellos tendremos importar nuestro archivo syscalls_usac.c y luego colocar la declaracion de la syscall de la siguiente forma: 
+```bash
+#Linea ejemplo sys.c o syscalls.h
+
+asmlinkage long sys_hola_mundo(void);
+``` 
 
 
 
-#### 1.) Creacion de syscall
+#### 4.) Compilacion Kernel
+
+Una vez tengamos esto listo y tengamos guardados los cambios , procederemos a compilar el kernel con el siguiente comando:
+
+```bash
+#Compila el kernel
+fakeroot make 
+``` 
+
+si quisieramos ejecutar el proceso usando mas cpu's ejecutamos el comando con la siguiente configuracion:
+
+```bash
+#Compila el kernel 3cpu's
+fakeroot make -j3
+``` 
+
+una vez empiece esto se vera como en la imagen:
+
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen1.png" width="500px" height="300px" align="center">
+
+
+esto tardara como una hora dependiendo los cpu que usemos 
+
+
+#### 4.) Instalacion Kernel
+
+cuando este termine de compilar ,tendremos que instalarlo y lo haremos con los siguientes comandos:
+
+```bash
+#Instala los modulos
+make modules_install
+
+#Instala el kernel como tal 
+make install
+
+#Instala cabeceras 
+make headers_install
+``` 
+
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen7.png" width="500px" height="300px" align="center">
+
+
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen8.png" width="500px" height="300px" align="center">
+
+
+#### 5.) Prueba de funcionamiento
+
+cuando ya lo hallamos instalado , tendremos que reiniciar nuestra maquina, y en eso tendremos que presionar la tecla "Shift" ,con ella habilitaremos el grub y tendremos que seleccionar el kernel que nosotros modificamos:
+
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen14.png" width="500px" height="300px" align="center">
+
+
+#### 1.) Creacion de syscall (funcionalidad real)
 
 para esta parte tendremos que crear nuestra syscall en c , esta sera la que se implementara en el kernel para poder extender la funcionalidad del mismo para nuestro caso mostraremos la implementacion de la syscall de matar proceso , el codigo que usa es el siguiente:
 
@@ -108,10 +228,10 @@ make install
 make headers_install
 ``` 
 
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Practica1_1S2025/imagenes/imagen7.png" width="500px" height="300px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen7.png" width="500px" height="300px" align="center">
 
 
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Practica1_1S2025/imagenes/imagen8.png" width="500px" height="300px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/imagen8.png" width="500px" height="300px" align="center">
 
 
 
@@ -215,41 +335,41 @@ cuando ya terminamos nuestra api procedemos a consumirla desde nuestra vista , p
 ahora mostraremos como quedo la interfaz implementando no solo la syscall de kill process sino tambien las otras llamadas que fueron solicitadas 
 
 ##### 1) Vista Inicial
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG1.png" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG1.png" width="600px" align="center">
 
 nos muestra la cantidad de ram total usada en nuestro sistema en tiempo real, ademas de que nos muestra lo mismo pero para el cpu , ademas de eso nos da la cantidad de procesos activos 
 
 ##### 2) Vista RAM
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG2.png" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG2.png" width="600px" align="center">
 
 aca tenemos el grafico de lineas para mostrar el historial de RAM de nuestro sistema donde si fluctua pues esto se vera reflejado en el grafico
 
 
 ##### 3) Vista CPU
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG3.png" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG3.png" width="600px" align="center">
 
 aca tenemos el grafico de lineas para mostrar el historial de CPU de nuestro sistema donde si fluctua pues esto se vera reflejado en el grafico
 
 
 ##### 4) Vista RX y TX
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG4.png" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG4.png" width="600px" align="center">
 
 aca tenemos el grafico de lineas para mostrar el historial de RX (KB recibidos) y TX (KB transmitidos) de nuestro sistema donde si fluctua pues esto se vera reflejado en el grafico
 
 ##### 5) Dashboard Procesos
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG5.png" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG5.png" width="600px" align="center">
 
 aca tenemos el dashboard para mostrar la informacion individual de los procesos, para nuestro caso mostramos el % de RAM usado en el momento , tambien % de RAM en el tiempo , % de CPU usado en el momento , % de CPU usado en el tiempo y por ultimo la cantidad de energia usada en el tiempo 
 
 
 ##### 6) Dashboard Procesos Listado
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG6.png" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG6.png" width="600px" align="center">
 
 tambien tenemos el listado de los procesos donde podremos ver lo que es el PID , Nombre, CPU, RAM , Prioridad ,Inicio del proceso , UID y por ultimo el consumo de energia, para poder visualizar la info de nuestro proceso en los dashboard solo tendremos que dar click en ver para que nos carque los cambios 
 
 
 ##### 7) Terminar Proceso
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG7.png" width="600px" align="center">
+<img src="https://raw.githubusercontent.com/gkruiz/syscalls_linux/refs/heads/main/IMAGENES/IMG7.png" width="600px" align="center">
 
 luego para terminar un proceso ,tendremos que dar click en terminar y automaticamente este se terminara en nuestro sistema y nos mostrara el mensaje que tiene la imagen 
 

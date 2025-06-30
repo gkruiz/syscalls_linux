@@ -1,0 +1,123 @@
+
+
+ 
+
+    <div class="container">
+      <header>
+        <h1>HTOP GT</h1>
+        <nav>
+            <ul>
+                <li><a  (click)="redirecciona('/login')">PROCESOS</a></li>
+                <li><a href="#cpu">CPU</a></li>
+                <li><a href="#ram-graph">Gráficos RAM</a></li>
+                <li><a href="#cpu-graph">Gráficos CPU</a></li>
+            </ul>
+        </nav>
+        <button (click)="actualiza_datos()">Actualizar</button>
+      </header>
+      <main>
+        <section id="ram-cpu" class="ram-cpu-container">
+          <div class="ram-info">
+              <h3>Monitor RAM</h3>
+              <div class="ram-usage-container">
+                  <div class="ram-usage-left">
+                    <div id="chart">
+                      <apx-chart
+                        [series]="ram_chart.series"
+                        [chart]="ram_chart.chart"
+                        [labels]="ram_chart.labels"
+                        [responsive]="ram_chart.responsive"
+                      ></apx-chart>
+                    </div>
+                  </div>
+              </div>
+              <div class="memory-details">
+                  <div class="memory-item">
+                      <p>Memoria Total</p>
+                      <p class="total-memory">{{5100}} MB</p>
+                  </div>
+                  <div class="memory-item">
+                      <p>Memoria Usada</p>
+                      <p class="used-memory">{{5100*ramUsedPercentage/(100)}} MB</p>
+                  </div>
+              </div>
+          </div>
+          <div class="cpu-info">
+              <h3>Monitor CPU</h3>
+              <div class="cpu-usage-container">
+                  <div class="ram-usage-left">
+                    <div id="chart">
+                      <apx-chart
+                        [series]="cpu_chart.series"
+                        [chart]="cpu_chart.chart"
+                        [labels]="cpu_chart.labels"
+                        [responsive]="cpu_chart.responsive"
+                      ></apx-chart>
+                    </div>
+                  </div>
+              </div>
+              <div class="memory-details">
+                  <div class="memory-item">
+                      <p>Carga Total</p>
+                      <p class="total-memory">{{cpuUsedPercentage}} %</p>
+                  </div>
+                  <div class="memory-item">
+                      <p>Procesos Activos</p>
+                      <p class="used-memory">{{procesosTotal}}</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+          <section class="ram-graph">
+              <h2>Graficas de Lineas RAM</h2>
+              <apx-chart
+              [series]="ram_line.series"
+              [chart]="ram_line.chart"
+              [xaxis]="ram_line.xaxis"
+              [dataLabels]="ram_line.dataLabels"
+              [title]="ram_line.title"
+              [stroke]="ram_line.stroke"
+              [grid]="ram_line.grid"
+            ></apx-chart>
+          </section>
+          <section class="ram-graph">
+            <h2>Graficas de Lineas CPU</h2>
+              <apx-chart
+              [series]="cpu_line.series"
+              [chart]="cpu_line.chart"
+              [xaxis]="cpu_line.xaxis"
+              [dataLabels]="cpu_line.dataLabels"
+              [title]="cpu_line.title"
+              [stroke]="cpu_line.stroke"
+              [grid]="cpu_line.grid"
+            ></apx-chart>
+        </section>
+        <section class="ram-graph">
+          <h2>Graficas de Red RX</h2>
+            <apx-chart
+            [series]="rx_line.series"
+            [chart]="rx_line.chart"
+            [xaxis]="rx_line.xaxis"
+            [dataLabels]="rx_line.dataLabels"
+            [title]="rx_line.title"
+            [stroke]="rx_line.stroke"
+            [grid]="rx_line.grid"
+          ></apx-chart>
+      </section>
+      <section class="ram-graph">
+        <h2>Graficas de Red TX</h2>
+          <apx-chart
+          [series]="tx_line.series"
+          [chart]="tx_line.chart"
+          [xaxis]="tx_line.xaxis"
+          [dataLabels]="tx_line.dataLabels"
+          [title]="tx_line.title"
+          [stroke]="tx_line.stroke"
+          [grid]="tx_line.grid"
+        ></apx-chart>
+    </section>
+
+        
+      </main>
+  </div>
+  

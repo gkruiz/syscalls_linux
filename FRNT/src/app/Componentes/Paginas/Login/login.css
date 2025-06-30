@@ -1,0 +1,121 @@
+.table-container {
+  background-color: #f7f7f7; /* Un gris claro de fondo, similar al contenedor */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px;
+  margin-bottom: 20px; /* Espacio inferior si tienes más contenido */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.table-title {
+  color: #333; /* Color del título */
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-align: left; /* Alineación del título */
+}
+
+.process-table {
+  width: 100%;
+  border-collapse: collapse; /* Colapsar los bordes de las celdas */
+  border-spacing: 0; /* Eliminar el espacio entre celdas */
+  font-size: 0.9em; /* Tamaño de fuente */
+  color: #555; /* Color del texto */
+}
+
+.process-table thead th {
+  background-color: #e0e0e0; /* Un gris más claro para el encabezado */
+  color: #333;
+  font-weight: bold;
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 2px solid #ccc; /* Línea inferior para separar el encabezado */
+}
+
+.process-table tbody td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee; /* Líneas sutiles entre filas */
+}
+
+.process-table tbody tr:last-child td {
+  border-bottom: none; /* Eliminar la línea inferior de la última fila */
+}
+
+.process-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Un ligero sombreado para filas pares */
+}
+
+.no-data {
+  padding: 15px;
+  text-align: center;
+  color: #777;
+}
+
+
+
+
+
+
+.process-table thead th:last-child,
+.process-table tbody td:last-child {
+  text-align: center; /* Centrar el contenido de la última columna */
+}
+
+.details-button {
+  background-color: #007bff; /* Un azul similar al de los elementos activos */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.details-button:hover {
+  background-color: #0056b3; /* Un tono más oscuro al pasar el ratón */
+}
+
+.details-button:focus {
+  outline: none; /* Evitar el contorno feo al enfocar */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Añadir un resplandor sutil al enfocar */
+}
+
+
+
+
+
+
+
+
+/* ... (resto de los estilos de la tabla) ... */
+
+.monitor-overview {
+  display: flex; /* Para alinear los elementos en horizontal */
+  gap: 20px; /* Espacio entre los apartados */
+  margin-bottom: 20px; /* Espacio entre los apartados y la tabla */
+  padding: 15px;
+  background-color: #f7f7f7; /* Fondo similar al contenedor de la tabla */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.overview-item {
+  flex: 1; /* Para que los apartados se distribuyan equitativamente en el espacio disponible */
+  background-color: white; /* Fondo blanco para cada apartado */
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Sombra suave para cada apartado */
+}
+
+.overview-label {
+  color: #777; /* Color del texto de la etiqueta */
+  font-size: 0.85em;
+  margin-bottom: 5px;
+}
+
+.overview-value {
+  color: #333; /* Color del valor */
+  font-size: 1.2em;
+  font-weight: bold;
+}

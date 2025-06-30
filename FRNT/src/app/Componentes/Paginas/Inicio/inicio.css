@@ -1,0 +1,207 @@
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #337ab7;
+  margin-bottom: 10px;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #337ab7;
+}
+
+main section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+main section h2 {
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Estilos para la sección de uso de RAM */
+.ram-usage {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+  
+ 
+
+
+
+
+/* Contenedor para las secciones de RAM y CPU a la par */
+.ram-cpu-container {
+  display: flex;
+  gap: 20px; /* Espacio entre las secciones de RAM y CPU */
+  margin-bottom: 30px; /* Espacio debajo de esta sección */
+}
+
+/* Estilos para la sección de Monitor RAM (dentro del contenedor flex) */
+.ram-info {
+  flex: 1; /* Ocupa la misma cantidad de espacio que la sección de CPU */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.ram-info h3 {
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Contenedor interno para las áreas de gráficas de RAM (dividido horizontalmente) */
+.ram-usage-container {
+  display: flex;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  overflow: hidden;
+  min-height: 50px; /* Altura mínima para el contenedor de los gráficos */
+  border: 1px dashed #ccc; /* Indicador de espacio para gráficos */
+  align-items: center; /* Centrar verticalmente el contenido si lo hay */
+  justify-content: center; /* Centrar horizontalmente el contenido si lo hay */
+  color: #999;
+  font-style: italic;
+}
+
+.ram-usage-left,
+.ram-usage-right {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  /* Se eliminaron los background-color y border-left/right específicos del gráfico simulado */
+}
+
+/* Estilos para los detalles de memoria de RAM */
+.ram-info .memory-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.ram-info .memory-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.ram-info .memory-item p:first-child {
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.ram-info .total-memory {
+  color: #337ab7;
+  font-weight: bold;
+}
+
+.ram-info .used-memory {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+/* Estilos para la sección de Monitor CPU (dentro del contenedor flex) */
+.cpu-info {
+  flex: 1; /* Ocupa la misma cantidad de espacio que la sección de RAM */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.cpu-info h3 {
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Contenedor interno para las áreas de gráficas de CPU (dividido horizontalmente) */
+.cpu-usage-container {
+  display: flex;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  overflow: hidden;
+  min-height: 50px; /* Altura mínima para el contenedor de los gráficos */
+  border: 1px dashed #ccc; /* Indicador de espacio para gráficos */
+  align-items: center; /* Centrar verticalmente el contenido si lo hay */
+  justify-content: center; /* Centrar horizontalmente el contenido si lo hay */
+  color: #999;
+  font-style: italic;
+}
+
+ 
+/* Estilos para los detalles de CPU */
+.cpu-info .memory-details { /* Reutilizamos la clase memory-details */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.cpu-info .memory-item { /* Reutilizamos la clase memory-item */
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.cpu-info .memory-item p:first-child {
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.cpu-info .total-memory { /* Reutilizamos la clase total-memory */
+  color: #00bcd4; /* Un color diferente para CPU */
+  font-weight: bold;
+}
+
+.cpu-info .used-memory { /* Reutilizamos la clase used-memory */
+  color: #f44336; /* Un color diferente para CPU */
+  font-weight: bold;
+}
+
+
+ 

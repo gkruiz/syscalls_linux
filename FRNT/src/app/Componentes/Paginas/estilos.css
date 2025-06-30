@@ -1,0 +1,3383 @@
+
+
+
+
+body{
+
+  background-size: cover;
+  font-family: 'century gothic';
+  
+  min-width: 100%;
+  margin-bottom: 15%;
+  justify-content: center;
+  
+}
+
+
+
+
+
+
+.tablePrinBack{
+  
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: white;
+  margin: auto;
+}
+
+
+
+
+/*ESTILOS PARA REGISTRO FERIA DE MAYO*/
+
+
+.prinRegistro{
+  width: 90%;
+  max-width: 500px;
+  min-height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+}
+
+
+
+.prinRegistrodivCampo{
+  width: 90%;
+  height: auto;
+  min-height: 45px;
+  /*border: 1px red solid;*/
+  margin: auto;
+}
+
+
+.prinRegistrodivSub{
+  width: 30%;
+  display: inline-block;
+  margin: auto;
+  border: 1px black dotted;
+}
+
+.divSubspace{
+  margin-left: 5%;
+}
+
+.registroCampo{
+ /* max-width: 400px;*/
+ border: 1px black dotted;
+ 
+}
+
+
+.Regdivprin{
+  border: 3px black solid;
+  border-radius: 10px;
+  width: 400px;
+  height: 266px;
+  margin: auto;
+  
+}
+
+
+.tablaQR{
+  width: 400px;
+  height: 266px;
+  border: 2px red solid;
+  margin: auto;
+  font-family: galium ;
+  font-size: 20px;
+  background-color: white;
+}
+
+.tablaQR td{
+  border: 2px red solid;
+}
+
+.tablaQR tr{
+  border: 2px red solid;
+ 
+}
+
+
+.tamRegCol{
+  width: 16%;
+}
+
+
+.RegTitlo{
+  
+  font-weight: 900;
+
+}
+
+
+ 
+
+
+@media screen and (max-width:600px){
+  
+
+
+  .prinRegistrodivSub{
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    border: 1px black dotted;
+    margin-bottom: 5px;
+  }
+  
+  .divSubspace{
+    margin-left: 0%;
+  }
+
+
+}
+
+
+
+
+/*FIN ESTILOS PARA REGISTRO FERIA DE MAYO*/
+
+
+ /*INICIO ESTILOS PARA VISTA DE DATOS FERIA DE MAYO*/
+
+ .viewEnca{
+  width: 60%;
+  margin: auto;
+  margin-top: 70px;
+ }
+
+ .viewEnca img{
+   width: 100%;
+   border-radius: 10px 10px 0px 0px;
+ }
+
+ .viewBody{
+   width: 60%;
+   min-height: 500px;
+   background-color: white;
+   margin: auto;
+   border-radius: 0px 0px 10px 10px;
+   font-family: century gothic;
+ }
+
+ .viewTable{
+   /*border: 3px red solid !important;*/
+   width: 80%;
+   margin: auto;
+   height: 90%;
+ }
+
+
+  @media screen and (max-width:1000px){
+  
+
+    .viewEnca{
+      width: 80%;
+      margin: auto;
+      margin-top: 70px;
+     }
+   
+     .viewEnca img{
+       width: 100%;
+       border-radius: 10px 10px 0px 0px;
+     }
+   
+     .viewBody{
+       width: 80%;
+       min-height: 500px;
+       background-color: white;
+       margin: auto;
+       border-radius: 0px 0px 10px 10px;
+       font-family: century gothic;
+     }
+   
+     .viewTable{
+       /*border: 3px red solid !important;*/
+       width: 80%;
+       margin: auto;
+       height: 90%;
+     }
+   
+  
+  
+  }
+  
+
+
+ /*FIN ESTILOS PARA VISTA DE DATOS FERIA DE MAYO*/
+
+
+
+
+
+
+
+
+
+
+/*********************************************************/
+/*ESTILOS PARA BACKORDER*/
+.OrdCabecera{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.OrdtableCabecera{
+  width: 100%;
+  text-align: center;
+}
+
+
+.OrdDatos{
+  width: 90%;
+  margin: auto;
+ 
+}
+
+.OrdtableDatos{
+  width: 70%;
+  margin: auto;
+ 
+}
+
+
+.OrdTableDatostitulo{
+  width: 20%;
+  font-weight: 900;
+}
+
+.OrdTableDatosDatos{
+  width: 80%;
+}
+
+.inputBackorder{
+  background-color: white;
+}
+
+/*********************************************************/
+
+
+/*********************************************************/
+/*Estilos para Crea Proveedores*/
+
+.camposUpdateProducto{
+  font-size: 0.8em;
+}
+
+/*********************************************************/
+
+
+/*********************************************************/
+/*Estilos para Crea Proveedores*/
+.camposUpdateProducto{
+  background-color: white;
+}
+/*********************************************************/
+
+/*********************************************************/
+/*Estilos para Crea Inicio grid*/
+.rowsgrid{
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgb(0, 198, 212);
+  border-radius: 10px;
+}
+
+.mmi1{
+  width: 130px;
+  height: 130px;
+  padding: 2%;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  color:   rgb(0, 198, 212);;
+  }
+
+
+  .mmi1:hover{
+ 
+    color: white;
+    }
+
+/*********************************************************/
+
+
+
+.fin{
+
+color: rgb(37, 224, 0) !important;
+
+}
+
+
+.finT{
+
+  color: rgb(241, 243, 245) ;
+  
+  }
+  
+
+.cottable td{
+
+width: 33%;
+}
+
+
+
+.cotarreg{
+
+border-radius: 6px 0px 0px 6px;
+
+}
+
+
+.cotllenado{
+background-color: rgb(224, 224, 224);
+border: rgb(224, 224, 224);
+}
+
+
+
+.swal2-title {
+
+  font-family: century gothic !important;
+  color: blue !important;
+
+}
+
+
+
+.swal2-html-container{
+
+  font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  width:850px !important;
+  font-size: 700px;
+  color: blue !important;
+  
+
+}
+
+
+
+/*Estilos GENERALES */
+
+
+.btdat{
+background-color: rgb(0, 170, 182);
+color: white;
+}
+
+
+hr{
+width: 100%;
+height: 2px;
+background-color: rgb(255, 255, 255);
+}
+
+.textc{
+color:rgb(255, 255, 255);
+}
+
+
+.imaCalext{
+width: 60%;
+height: 12%;
+
+}
+
+
+.imaCalext2{
+width: 40%;
+height: 5%;
+
+}
+
+
+.tituaqua{
+font-size: 1.1em;
+width: 90%;
+
+}
+.tituaqua2{
+font-size: 1.1em;
+width: 90%;
+height: 45px;
+
+}
+
+/*Estilos para encabezado*/
+.encabezado{
+  width: 100%;
+  transition: linear all .5s;
+  -moz-transition:  width .5s linear;
+  
+  
+ 
+}
+
+.infoDiv{
+border-radius: 15px 15px 0px 0px;
+  /*background-color: rgba(226, 226, 226,0.7);*/
+  /*background-color: rgb(226, 226, 226,0.7);*/
+  
+  margin: auto;
+  background-color: rgba(226, 226, 226,0.7);
+  font-size: 1.3em;
+  width: 90%;
+ justify-content: center;
+  min-width: 300px;
+  transition: linear all .5s;
+  vertical-align: center;
+  margin-top: 5%;
+  
+  
+}
+
+.infoUsuario{
+width: 33%;
+justify-content: center;
+text-align: center;
+vertical-align: center;
+}
+
+
+
+
+.tituaqua{
+font-size: 1.1em;
+
+}
+
+
+
+
+/*Estilos para el cuerpo de la pagina */
+
+.cuerpo{
+margin: auto;
+width: 90%;
+font-size: 0.8em;
+transition: ease all .5s;
+background: rgb(255, 255, 255) ;  /*rgba(26, 78, 138, 0.884) ;*/
+text-align: center;
+justify-content: center;
+
+}
+
+.cuerpoC{
+  margin: auto;
+  width: 90%;
+  font-size: 0.8em;
+  transition: ease all .5s;
+  background: rgba(26, 78, 138, 0.884) ;
+  text-align: center;
+  justify-content: center;
+  
+  }
+
+.cuerpocal{
+
+
+
+margin: auto;
+width: 90%;
+font-size: 0.8em;
+transition: ease all .5s;
+background: rgba(26, 78, 138, 0.884) ;  /*rgba(26, 78, 138, 0.884) ;*/
+text-align: center;
+justify-content: center;
+
+}
+
+.cuerpoTinfo{
+font-size: 1.1em;
+background-color: rgba(128, 128, 128, 0);
+color:white
+}
+
+.cuerpoTinfo:hover{
+color: gray;
+transition:background-color 1s;
+}
+
+.campos{
+font-size: 1.3em;
+max-width: 200px;
+width: 200px;
+background-color: rgb(255, 255, 255);
+}
+
+.menu1{
+margin-top: 40px;
+padding: 5px;
+padding-left: 21px;
+padding-right: 21px;
+background: rgb(0, 170, 182);
+border: 1px rgb(0, 170, 182) solid;
+color: white;
+width: 200px;
+font-size: 1.5em;
+border-radius: 4px 4px 4px 4px;
+
+}
+
+
+
+.menu2{
+/*margin-top: 40px;*/
+padding: 3px;
+
+background: rgb(0, 170, 182);
+border: 1px rgb(0, 170, 182) solid;
+color: white;
+width: 100px;
+font-size: 1.5em;
+border-radius: 4px 4px 4px 4px;
+
+}
+
+
+button{
+background-color: rgb(0, 170, 182);
+border: 1px rgb(0, 170, 182) solid;
+}
+
+
+button:hover{
+background-color: rgb(0, 198, 212);
+border: 1px rgb(0, 198, 212) solid;
+}
+
+tr{
+border: 1px rgba(133, 25, 25, 0) solid;
+}
+
+td{
+border: 1px rgba(212, 9, 9, 0) solid;
+}
+
+
+.tablaDatos{
+border: 1px rgba(226, 226, 226,0.7) solid;
+background: rgba(26, 78, 138, 0) ;
+/*background-color: rgba(226, 226, 226,0.7);*/
+color: black;
+/*min-width: 350px;*/
+max-width: 85%;
+margin: auto;
+text-align: left;
+
+/*background-color: rgba(90, 90, 90, 0.7);*/
+}
+
+
+
+
+
+.imagenP{
+width: 450px;
+}
+
+
+
+.btcH{
+  background-color: rgb(25, 29, 29);
+  color: white;
+  border: 1px rgb(26, 27, 27) solid;
+  
+  
+  }
+
+.btcal{
+background-color: rgb(0, 170, 182);
+color: white;
+border: 1px rgb(0, 170, 182) solid;
+
+
+}
+
+.btcal:hover{
+background-color: rgb(0, 206, 221);
+color: white;
+border: 1px rgb(0, 206, 221) solid;
+
+
+}
+
+
+.btcalF{
+  background-color:rgb(181, 241, 245);
+  color: rgb(10, 1, 1);
+  border: 1px rgb(181, 241, 245) solid;
+  
+  
+  }
+  
+  .btcalF:hover{
+  background-color:rgb(181, 241, 245);
+  color:  rgb(10, 1, 1);
+  border: 1px rgb(181, 241, 245) solid;
+  
+  
+  }
+
+  .btcalFU{
+    background-color:rgb(124, 242, 250);
+    color: rgb(10, 1, 1);
+    border: 1px rgb(124, 242, 250) solid;
+    
+    
+    }
+    
+    .btcalFU:hover{
+    background-color:rgb(124, 242, 250);
+    color:  rgb(10, 1, 1);
+    border: 1px rgb(124, 242, 250) solid;
+    
+    
+    }
+/*FIN ESTILOS GENERALES*/
+
+
+
+.tablaAlert{
+width: 120%;
+}
+
+.tablaAlert tr{
+border: 1px black solid;
+height: 35px;
+}
+
+.tablaAlert td{
+border: 1px black solid;
+
+}
+
+
+
+/*Estilos para la pagina de inicio*/
+
+.cuerpo2{
+width: 100%;
+font-size: 0.8em;
+height: 100%;
+justify-content: center;
+text-align: center;
+margin: auto;
+
+/*
+border:1px black solid;*/
+}
+
+
+
+.tabInicio{
+position:relative;
+width: 85%;
+height: 300px;
+justify-content: center;
+margin:auto;
+margin-top: 25px;
+/*border:1px black solid;
+border-radius: 5px 5px 5px 5px;*/
+}
+
+.rowss{
+height: 50px;
+text-align: center;
+}
+
+/*.mmi1{
+width: 120px;
+height: 120px;
+padding: 2%;
+text-decoration: none;
+background-color: green;
+}*/
+
+.subC{
+width: 90%;
+background-color: white;
+margin:auto;
+border-radius: 5px 5px 5px 5px;
+}
+
+/*fin estilos inicio*/
+
+
+
+
+/*logo aqua*/
+
+
+
+
+
+
+/*Estilos para la calculadora el html*/
+
+.tcalculadora{
+font-size: 1.3em;
+border:1px rgba(0, 128, 0, 0) solid;
+}
+
+.tdCalc{
+width: 7.0%;
+height: 20px;
+
+}
+
+.menuCalc{
+width: 300px;
+background-color: white;
+font-size: 0.8em;
+}
+
+.divTira{
+border-radius: 3px 3px 3px 3px;
+width: 50px;
+height: 50px;
+font-size: 1.0em;
+margin: auto;
+text-align: center;
+justify-content: center;
+}
+
+.colTira{
+width: 7.0%;
+font-size: 0.8em;
+justify-content: center;
+text-align: center;
+justify-self: center;
+color: rgb(255, 255, 255);
+/*border: 1px green solid;*/
+vertical-align: top;
+
+}
+
+.checkbox-lg {
+top: .8rem;
+scale: 1.4;
+margin-right: 0.7rem;
+}
+
+
+
+.infoCalc{
+height: 10px;
+}
+
+/*fin estilos pra la calculadora html*/
+
+
+
+
+
+
+
+/*estilos para manager usuarios*/
+
+.mninfo{
+width: 50%;
+height: 160px;
+display:inline-block;
+font-size: 1.0em;
+vertical-align: top;
+}
+
+.mninfo input{
+width: 100%;
+margin-top: 0px;
+margin: auto;
+}
+
+.mninfo td{
+width: 33%;
+/*border:1px green solid;*/
+}
+
+.mninfo tr{
+
+vertical-align: top;
+}
+
+
+.titulo{
+font-size: 1.5em;
+}
+
+
+.mnngfor{
+width: 50%;
+height: 130px;
+font-size: 1.0em;
+/*border: 1px green solid;*/
+display: inline-block;
+margin-top: 0px;
+margin-bottom: 0px;
+border-collapse: collapse;
+
+
+}
+
+.mnngfor td{
+width: 33%;
+}
+
+.mnngfor tr{
+vertical-align: top;
+}
+
+
+.mnngfor input{
+width: 100%;
+}
+/*fin estilos para manager usuario*/
+
+
+
+
+.descuentx{
+width: 80%;
+min-width: 50px;
+background-color: white;
+}
+
+
+.mnusucamp{
+font-size: 0.9em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ESTILOS PARA LA LOTERIA CARTON----------------------------------------------------*/
+
+
+
+.diplot{
+margin: auto;
+width: 90%;
+height: 600px;
+border: 6px #00306a solid;
+text-align: center;
+justify-content: center;
+background-color: white;
+
+}
+
+
+
+.lottable{
+width: 70%;
+height: 90%;
+background-color: white;
+border:0px green solid;
+text-align: center;
+margin: auto;
+
+}
+
+
+
+.lottr{
+height: 50px;
+vertical-align: middle;
+text-align: right;
+}
+
+
+.lottr input{
+margin: auto;
+}
+
+/* esta linea*/
+.ajusteInput{
+  box-sizing: border-box;
+}
+
+.lottcarton{
+font-size: 2.4em;
+font-weight: 900;
+color: #00306a;
+font-family: arial black;
+}
+
+
+.diplot td{
+border: 8px #00306a solid;
+width: 33%;
+}
+
+.diplot tr{
+height: 33%;
+}
+
+
+.lotimgtable{
+    width: 80%;
+    height: 70%;
+object-fit:contain;
+}
+
+.lotencima{
+width: 70%;
+}
+
+.lottprod{
+font-size: 1.0em;
+font-weight: bolder;
+font-family: arial black;
+}
+
+
+.lotletprods{
+justify-content: center;
+text-align: center;
+font-weight: 900;
+color: #00306a;
+}
+
+
+
+.lottitfin{
+font-size: 1.5em;
+
+}
+
+
+
+/*ESTILOS PARA LA LOTERIA CARTON----------------------------------------------------*/
+
+.lotcprincipal{
+margin: auto;
+border: 0px green solid;
+height: 800px;
+}
+
+
+
+.lotctabla{
+margin: auto;
+width: 500px;
+/*height: 700px;*/
+border: 3px rgb(245, 0, 0) solid;
+}
+
+
+.lotctabla tr {
+
+border: 3px rgb(245, 0, 0) solid;
+}
+
+.lotctabla td {
+
+border: 3px rgb(245, 0, 0) solid;
+}
+
+/*ESTILOS PARA LA LOTERIA CARTON----------------------------------*/
+
+/*-------------------------------estilos para cotizador sae */
+
+
+.cottable{
+margin: auto;
+width: 90%;
+height: 400px;
+}
+
+.sublotc{
+margin: auto;
+width: 100%;
+
+}
+
+.cotagrega{
+background-color: rgb(133, 133, 133);
+border: 1px rgb(133, 133, 133) solid;
+}
+
+.cottable tr td div{
+height: 25px;
+}
+
+
+
+
+.cotselect{
+width: 90%;
+}
+
+
+.cotagrega:hover{
+background-color: rgb(168, 168, 168);
+border: 1px rgb(168, 168, 168) solid;
+}
+
+
+.cotetiq{
+font-size: 0.9em;
+height: 100%;
+
+}
+
+
+
+
+
+/*
+ESTILOS PARA PDF GENERA
+*/
+
+
+
+.PDFcuerpo{
+background-color: rgb(255, 255, 255);
+width: 90%;
+
+margin: auto;
+}
+
+
+.PDFtabla{
+margin: auto;
+border:0px black solid;
+text-align: center;
+width: 75%;
+height: 100%;
+
+}
+
+
+.PDFubicaciones{
+font-size: 0.7em;
+text-align: left;
+font-weight: 900;
+color: gray;
+}
+
+
+
+.PDFsubtitulo{
+color:#009ba8;
+font-weight: 900;
+font-size: 1.1em;
+text-align: left;
+}
+
+.PDFdivsubtable{
+margin: auto;
+width: 100%;
+height: 100%;
+border: 3px #009ba8 solid;
+border-radius: 10px;
+font-size: 0.9em;
+}
+
+.PDFsubtable{
+width: 90%;
+height: 80%;
+text-align: left;
+margin: auto;
+
+}
+
+
+
+
+.PDFsubtable td{
+width: 20%;
+
+}
+
+
+
+.PDFffact{
+font-size: 0.6em;
+text-align: left;
+
+}
+
+.PDFtabladatos{
+font-size: 0.8em;
+
+}
+
+
+.PDFdescar{
+background-color: rgb(255, 255, 255);
+width: 90%;
+margin: auto;
+}
+
+
+/*
+FIN ESTILOS PARA PDF GENERA
+*/
+
+
+
+
+
+/*INICIO ESTILOS FORMULARIO*/
+
+.FORMtabla{
+width: 90%;
+
+font-size: 1.0em;
+margin: auto;
+
+}
+
+
+.FORMespa{
+width:3% ;
+
+}
+
+
+
+
+.FORMinput{
+width: 90%;
+height: 30px;
+margin: auto;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+background-color: white;
+}
+
+
+
+  
+
+
+/*FIN ESTILOS FORMULARIO*/
+
+
+/* tamano medio  111111111 */
+@media all and (max-width: 1200px){
+
+  .infoDiv{
+    
+    background-color: rgba(226, 226, 226,0.7);
+    font-size: 1.3em;
+    width: 100%;
+
+    
+  }
+
+  .cuerpo{
+    width: 100%;
+    font-size: 0.8em;
+    
+    
+  }
+
+  .cuerpocal{
+    width: 100%;
+    font-size: 0.8em;
+    
+    
+  }
+ 
+  .cuerpoC{
+    width: 100%;
+    font-size: 0.8em;
+    
+    
+  }
+ 
+ 
+  .cuerpoTinfo{
+    font-size: 1.2em;
+  }
+
+  .campos{
+    font-size: 1.3em;
+    max-width: 180px;
+    width: 180px;
+  }
+  .menu1{
+
+    font-size: 1.5em;
+
+  }
+
+  .cuerpo2{
+    width: 100%;
+
+  }
+
+  .tcalculadora{
+    font-size: 1.5em;
+  
+  }
+
+  .divTira{
+    width: 50px;
+    height: 50px;
+    font-size: 0.8em;
+  }
+
+
+
+  .mninfo{
+    height: 170px;
+    font-size: 1em;
+  }
+
+  .mnngfor{
+    height: 100px;
+    font-size: 0.7em;
+  }
+
+
+  
+
+
+/*
+ESTILOS PARA PDF GENERA
+*/
+
+
+
+.PDFcuerpo{
+background-color: rgb(255, 255, 255);
+width: 100%;
+
+margin: auto;
+}
+
+
+.PDFubicaciones{
+font-size: 0.6em;
+text-align: left;
+font-weight: 900;
+color: gray;
+}
+
+
+
+.PDFffact{
+font-size: 0.5em;
+text-align: left;
+
+}
+
+.PDFtabladatos{
+font-size: 0.8em;
+
+}
+
+
+
+.PDFdescar{
+  width: 100%;
+}
+
+/*
+FIN ESTILOS PARA PDF GENERA
+*/
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*tamano medio 2222222222*/
+@media all and (max-width: 991px){
+
+.infoDiv{
+  background-color: rgba(226, 226, 226,0.7);
+  font-size: 1.0em;
+  width: 100%;
+}
+
+.cuerpo{
+  width: 100%;
+  font-size: 0.6em;
+  
+}
+.cuerpocal{
+  width: 100%;
+  font-size: 0.6em;
+  
+}
+.cuerpoC{
+  width: 100%;
+  font-size: 0.6em;
+  
+}
+
+.cuerpoTinfo{
+  font-size: 1.5em;
+}
+
+.campos{
+  font-size: 1.3em;
+  max-width: 150px;
+  width: 150px;
+}
+
+.menu1{
+
+  font-size: 2.0em;
+
+}
+
+.cuerpo2{
+  width: 100%;
+
+}
+
+.tcalculadora{
+  font-size: 1.8em;
+
+}
+.divTira{
+  width: 50px;
+  height: 50px;
+  font-size: 0.8em;
+}
+
+.tituaqua{
+  font-size: 1.1em;
+  width: 90%;
+
+}
+
+
+
+
+.mninfo{
+  font-size: 1.1em;
+}
+
+.mnngfor{
+  font-size: 0.8em;
+}
+
+
+
+
+  /***********************************LOTERIA*/
+  .lottable{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border:0px red solid;
+    
+  }
+
+
+
+  .diplot{
+    width: 100%;
+    height: 450px;
+    border: 6px #00306a solid;
+    background-color: white;
+  }
+
+
+  .lotencima{
+    width: 80%;
+  
+  }
+
+  .lotimgtable{
+    width: 60%;
+    height: 60%;
+  }
+
+
+  .lottprod{
+    font-size: 1.70em;
+    font-weight: bolder;
+  
+  }
+
+
+  .lottitfin{
+    font-size: 2.3em;
+  }
+
+  /************************************LOTERIA*/
+
+
+
+
+  
+/*
+ESTILOS PARA PDF GENERA
+*/
+
+
+
+.PDFcuerpo{
+background-color: rgb(255, 255, 255);
+width: 100%;
+
+margin: auto;
+}
+
+
+.PDFubicaciones{
+font-size: 0.6em;
+text-align: left;
+font-weight: 900;
+color: gray;
+}
+
+
+
+.PDFffact{
+font-size: 0.5em;
+text-align: left;
+
+}
+
+.PDFtabladatos{
+font-size: 0.8em;
+
+}
+
+.PDFdescar{
+  width: 100%;
+}
+/*
+FIN ESTILOS PARA PDF GENERA
+*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Tamano minimo 3333333333*/
+@media all and (max-width: 768px){
+  .tablaDatos{
+    font-size: 1.5em;
+
+  }
+ 
+
+  .colOculta{
+    display: none;
+  }
+
+
+  .infoDiv{
+      background-color: rgba(226, 226, 226,0.7);
+      font-size: 0.9em;
+      width: 100%;
+
+  }
+
+  .cuerpo{
+    width: 100%;
+    /*font-size: 0.46em;*/
+    font-size: 0.32em;
+  }
+
+  .cuerpocal{
+    width: 100%;
+    /*font-size: 0.46em;*/
+    font-size: 0.32em;
+  }
+  .cuerpoC{
+    width: 100%;
+    /*font-size: 0.46em;*/
+    font-size: 0.32em;
+  }
+
+  .cuerpoTinfo{
+    font-size: 1.5em;
+  }
+
+  .campos{
+    font-size: 1.9em;
+    max-width: 100px;
+    width: 90px;
+  }
+
+
+  .menu1{
+    font-size: 2.5em;
+
+  }
+
+  .cuerpo2{
+    width: 100%;
+  }
+
+  .tcalculadora{
+    font-size: 2.0em;
+  
+  }
+
+  
+  .divTira{
+    width: 40px;
+    height: 40px;
+    font-size: 0.7em;
+  }
+
+  .mninfo{
+    width: 100%;
+    height: 220px;
+    display:block;
+    font-size: 1.8em;
+  }
+
+  .titulo{
+    font-size: 2.5em;
+  }
+
+  .mnngfor{
+    width: 100%;
+    font-size: 1.5em;
+    height: 150px;
+    
+    
+  }
+
+  .mnngfor td{
+    width: 40%;
+  }
+
+
+  .mnngfor input{
+    width: 100%;
+  }
+}
+
+
+
+
+
+@media all and (max-width: 550px){
+
+.descuentx{
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.cuerpo{
+  width: 100%;
+  /*font-size: 0.46em;*/
+  font-size: 0.32em;
+  /*order:1px red solid;*/
+}
+
+.cuerpocal{
+  width: 100%;
+  /*font-size: 0.46em;*/
+  font-size: 0.32em;
+  /*order:1px red solid;*/
+}
+.cuerpoC{
+  width: 100%;
+  /*font-size: 0.46em;*/
+  font-size: 0.32em;
+  /*order:1px red solid;*/
+}
+
+.infoDiv{
+  background-color: rgba(226, 226, 226,0.7);
+  font-size: 0.9em;
+  width: 100%;
+  min-width: 323px;
+
+}
+
+.logoaqua{
+width: 70px;
+height: 40px;
+
+}
+
+.tablaDatos{
+
+  font-size: 1.3em;
+  width: 100%;
+  min-width: 380px;
+  /*background-color: rgba(90, 90, 90, 0.7);*/
+}
+
+.cuerpoTinfo{
+  font-size: 1.6em;
+}
+
+.colOculta{
+  display: none;
+}
+
+.campos{
+  font-size: 1.9em;
+  max-width: 100px;
+  width: 120%;
+  /*width: 55px;*/
+}
+/*
+.imgContenedor{
+  width: 20px;;
+  height: 20px;;
+  overflow:hidden;
+}*/
+
+.imagenP{
+  width: 250px;
+}
+
+.mninfo{
+  width: 100%;
+  height: 220px;
+  display:block;
+  font-size: 2.2em;
+}
+
+.titulo{
+  font-size: 2.5em;
+}
+
+.mnngfor{
+  width: 100%;
+  font-size: 2.0em;
+  height: 180px;
+  /*border: 1px green solid;*/
+  
+  
+}
+
+.mnngfor td{
+  width: 33%;
+}
+
+
+.mnngfor input{
+  width: 100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 510px){
+
+
+hr{
+  width: 90%;
+  margin-left: 0px;
+
+}
+
+
+.tituaqua{
+  font-size: 1.1em;
+  width: 80%;
+
+}
+
+
+.campos{
+  font-size: 1.9em;
+  max-width: 50px;
+  width: 120%;
+  /*width: 55px;*/
+}
+
+
+.cuerpo{
+  width: 350px;
+  margin: auto;
+  /*font-size: 0.46em;*/
+  font-size: 0.32em;
+  /*border:1px red solid;*/
+}
+
+.cuerpocal{
+  width: 400px;
+  margin: auto;
+  /*font-size: 0.46em;*/
+  font-size: 0.32em;
+  /*border:1px red solid;*/
+}
+
+.cuerpoC{
+  width: 400px;
+  margin: auto;
+  /*font-size: 0.46em;*/
+  font-size: 0.32em;
+  /*border:1px red solid;*/
+}
+
+.infoDiv{
+  margin: auto;
+  margin-top: 10px;
+  background-color: rgba(226, 226, 226,0.7);
+  font-size: 0.9em;
+  width: 350px;
+  min-width: 350px;
+  
+
+}
+
+
+
+.tablaDatos{
+
+  font-size: 1.1em;
+  width: 400px;
+  min-width: 380px;
+  /*background-color: rgba(90, 90, 90, 0.7);*/
+}
+
+
+.divTira{
+  width: 30px;
+  height: 30px;
+  font-size: 0.7em;
+}
+
+}
+
+/*
+estilo css para los * campos obligatorios formulario franklin
+*/
+
+.obligatorio{
+color: red;
+font-weight: bold;
+}
+
+
+
+
+p {
+font-family: Lato;
+font-size: 15px;
+}
+
+
+
+/* paginesion estilo*/
+
+
+
+.pagination{
+text-align: center;
+margin: 30px 30px 60px;
+padding-left: 300px;
+user-select: none;
+}
+
+.pagination li{
+display: inline-block;
+margin: 5px;
+box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+}
+
+.pagination li a{
+color: #171ab8;
+text-decoration: none;
+font-size: 1.2em;
+line-height: 45px;
+}
+
+.previous-page, .next-page{
+background: #0AB1CE;
+width: 80px;
+border-radius: 45px;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+.previous-page:hover{
+transform: translateX(-5px);
+}
+
+.next-page:hover{
+transform: translateX(5px);
+}
+
+.current-page, .dots{
+background: #ccc;
+width: 45px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.active{
+background: #0AB1CE;
+}
+
+.disable{
+background: #171ab8;
+}
+
+/*fin de paginesion*/
+
+
+
+.boxes
+{
+
+  display:inline-block;
+  margin: auto;
+  /*background-color: green;*/
+
+
+}
+
+
+
+/*diseño para cot grafico*/
+
+.boxes1 {
+
+   display: flex;
+   flex-wrap: wrap;
+   flex: 1 1 1 1;
+   
+   height: 100%;
+   width: 100%;
+  
+  /*display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1vw;
+  grid-row-gap: 25px;
+  padding-left: 25px;*/
+
+
+
+
+
+}
+
+
+
+.btnF{
+display: flex;
+justify-content: center;
+}
+
+/*boton fallido*/
+.modalC{
+
+  transform:scale(1);
+  .modal-background {
+    background:rgba(0,0,0,.0);
+    animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    .modal {
+      background-color:transparent;
+      animation: modalFadeIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      h2,p {
+        opacity:0;
+        position:relative;
+        animation: modalContentFadeIn .5s 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+      .modal-svg {
+        rect {
+          animation: sketchIn .5s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+    }
+  }
+  &.out {
+    animation: quickScaleDown 0s .5s linear forwards;
+    .modal-background {
+      animation: fadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      .modal {
+        animation: modalFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        h2,p {
+          animation: modalContentFadeOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+        .modal-svg {
+          rect {
+            animation: sketchOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/*boton cotGrafico*/
+
+/*.modalC{
+transition: all 06s ease;
+z-index: 1;
+}
+
+.modalC::after{
+content: "";
+position: absolute;
+width: 10%;
+height: 100%;
+left: -10px;
+top:0;
+background-color: #0527e7;
+transform: skew(20deg, 0deg);
+transition: all 0.6s ease;
+}
+.modalC::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+transform: skew(20deg,0deg);
+border: 3px solid #4903cc;
+z-index: -1;
+
+}
+.modalC:hover::after{
+background-color: #ffffff31;
+transform: skew(20deg,0deg)translate(240px);
+}
+
+.modalC:hover::before{
+background-color:  #0527e7;
+border: 3px solid 0382cc;
+transform: skew(20deg,0deg) scale(1.1);
+}
+
+*/
+
+/* card*/
+
+
+
+
+
+/*boton cotGrafico*/
+
+/*.modalC{
+  transition: all 06s ease;
+  z-index: 1;
+}
+
+.modalC::after{
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  left: -10px;
+  top:0;
+  background-color: #0527e7;
+  transform: skew(20deg, 0deg);
+  transition: all 0.6s ease;
+}
+.modalC::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: skew(20deg,0deg);
+  border: 3px solid #4903cc;
+  z-index: -1;
+  
+}
+.modalC:hover::after{
+  background-color: #ffffff31;
+  transform: skew(20deg,0deg)translate(240px);
+}
+
+.modalC:hover::before{
+  background-color:  #0527e7;
+  border: 3px solid 0382cc;
+  transform: skew(20deg,0deg) scale(1.1);
+}
+
+*/
+
+/* card*/
+.card{
+
+ 
+
+margin: 20px;
+padding: 10px;
+border-width: 20px;
+/*width:15px;*/
+background-color: rgb(255, 255, 255);
+border-color: rgb(11, 132, 180);
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.TablaCalFu
+{
+  border-collapse: collapse;
+  margin: auto;
+}
+
+
+.FORMtablaCL{
+  
+  width: 90%;
+  margin:auto;
+  font-size: 1.0em;
+  border: 1px solid;
+  border-color: rgb(4, 28, 37);
+  text-align: center;
+  }
+  
+/*
+.FORMtablaCL td{
+  border:3px red solid;
+}
+
+.FORMtablaCL tr{
+  border:3px blue solid;
+
+}*/
+
+
+
+  .FORMinputC{
+   
+    height: 30px;
+    margin: auto;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    background-color: white;
+    
+    }
+
+
+    .FORMinputCL{
+   
+      height: 30px;
+      margin: auto;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      background-color: rgb(137, 239, 247);
+      width: 100%;
+      text-align: center;
+      }
+
+    .cal{
+      height: 50px;
+      vertical-align: middle;
+      text-align: right;
+      }
+      
+      
+      .cal input{
+      margin: auto;
+      }
+      
+
+      .calS{
+        margin: auto;
+        width: 90%;
+        height: 400px;
+        }
+
+
+
+/**/
+
+        
+       
+    .TablaCal1{
+      margin: auto;
+      padding: 3px 10px;
+    /*border: PowderBlue 5px solid;*/
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background-color: #c8f7f7;
+    }
+     
+
+    .TotalF
+    {
+      margin: auto;
+      border-top: rgb(1, 5, 22) 2px solid;
+      border-bottom: rgb(1, 5, 22) 2px double;
+    }
+
+    
+/**/
+@media screen and (max-width:767px){
+  .encabezado{width: 90%;}
+  .cuerpocal{width: 100%}
+}
+@media  screen and(min-width:768px)and (max-width:990px){
+  .encabezado{width: 100%;}
+  .cuerpocal{width: 100%;}
+}
+@media  screen and(min-width:991px){
+  .encabezado{}
+  .cuerpocal{}
+}
+
+
+
+.btcalFM{
+  background-color:rgb(69, 164, 241);
+  color: rgb(10, 1, 1);
+  border: 1px rgb(69, 164, 241) solid;
+  
+  
+  }
+  
+  .btcalFM:hover{
+  background-color:rgb(69, 164, 241);
+  color:  rgb(10, 1, 1);
+  border: 1px rgb(69, 164, 241) solid;
+  
+  
+  }
+
+  .btcalFUM{
+    background-color:rgb(69, 164, 241);
+    color: rgb(10, 1, 1);
+    border: 1px rgb(69, 164, 241) solid;
+    
+    
+    }
+    
+    .btcalFUM:hover{
+    background-color:rgb(69, 164, 241);
+    color:  rgb(69, 164, 241);
+    border: 1px rgb(69, 164, 241) solid;
+    
+    
+    }
+
+
+
+
+    
+  /*bloque 22 de septiembre*/
+  
+  .img2{
+    height: 60px;
+  }
+
+.ratings-slider {
+background: rgb(0, 255, 106);
+}
+
+
+:root {
+--dark-bg-color: #2b2b2c; 
+--light-bg-color: #f2f2f2; 
+}
+
+.survey__title {
+text-align: center;
+padding-top: 10px;
+margin: 4rem 0 3rem 0;
+text-transform: capitalize;
+}
+
+.feedback-form {
+max-width: 500px;
+margin: 0 auto;
+}
+
+.long-response, .short-response {
+width: 100%;
+padding: .5rem;
+box-sizing: border-box;
+border: solid 1px gray;
+}
+
+.long-response:focus, .short-response:focus {
+outline: solid 3px;
+outline-color: #bc706b;
+}
+
+.ratings {
+ 
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+
+.rating-key {
+
+flex-basis: 100%;
+display: flex;
+justify-content: space-between;
+padding: 0 .5rem;
+}
+
+.rating-radio {
+
+display: none;
+}
+.rating-radio:checked + .rating-number {
+
+background-color: #3330f1;
+border: solid 1px #5a5757;
+box-shadow: none;
+color: rgb(0, 0, 0);
+}
+
+.rating-number {
+
+display: block;
+width: 1rem;
+height: 1rem;
+border: solid 1px rgb(0, 0, 0);
+color: rgb(0, 0, 0);
+margin: .5rem;
+text-align: center;
+padding: .5rem;
+border-radius: .2rem;
+box-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.22);
+}
+
+
+
+@media only screen and (max-width: 400px) {
+.submit {
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+}
+
+main, footer {
+padding-top: 2rem;
+padding: 0 1rem;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+.header-group {
+  padding: 0;
+}
+}
+
+.mega-menu-logo {
+width: 200px;
+}
+
+/*diseño 27 de septiembre*/
+.user-input-box label{
+  width: 95%;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.user-input-box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 25%;
+  padding-bottom: 15px;
+}
+
+
+.ratings2{
+  display: flex;
+  padding-left: 0px;
+
+}
+.ratings3{
+  display: flex;
+}
+
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+/*90deg, #5D54A4, #7C78B8*/
+.screen {		
+	background: linear-gradient(90deg, #59b9c5, #468b86);		
+	position: relative;	
+	height: 650px;
+	width: 900px;	
+	box-shadow: 0px 0px 24px #59b9c5;
+}
+
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+}
+
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.screen__background__shape1 {
+	height: 520px;
+	width: 520px;
+	background: #FFF;	
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+	height: 220px;
+	width: 220px;
+	background: #59b9c5;	
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
+}
+/* #5D54A4, #6A679E*/
+.screen__background__shape3 {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(270deg, #5491a4, #468b86);
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape4 {
+	height: 400px;
+	width: 200px;
+	background: #5491a4;	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+}
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
+  
+}
+.login2{
+  padding: 10px;
+  padding-top: 100px;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #468b86;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #5491a4;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+.social-login {	
+	position: absolute;
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-login__icon {
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;	
+	text-shadow: 0px 0px 8px #7875B5;
+}
+
+.social-login__icon:hover {
+	transform: scale(1.5);	
+}
+.ratings{
+  display: flex;
+}
+
+
+
+
+.divtableorden{
+  display: inline-block;
+  margin: auto;
+  margin-top: 0px;
+  width:110px;
+  border: 0px red solid;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+
+
+/*ESTILOS PARA LA ENCUESTA ARQUITECTO MARVIN***********************************************/
+
+
+
+
+/*Estilos para vista computadora*/
+.encuesta_div{
+  margin: auto;
+  margin-top: 50px;
+  /*max-width: 70%;*/
+  max-width: 900px;
+  height: 500px;
+  /*border:5px blue solid !important;*/
+  background-color: white;
+  text-align: center;
+}
+
+
+.cuerpo_encuesta{
+ /* border:5px red solid !important;*/
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+  background-color: white;
+}
+
+
+.imagen_encuesta{
+ /* border:5px red solid !important;*/
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  margin-top: 0px;
+  margin: auto;
+  background-color: gray;
+  /*background-image: url("../../../assets/imagenes/Encuesta/aquabro.png");*/
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+
+
+ .tabla-encuesta{
+  width: 91%;
+  height: 430px;
+  /*border: 5px green solid;*/
+  margin-top: 25px;
+  margin-left: 25px;
+  /*background-image: url("../../../assets/imagenes/serpentina.gif");*/
+
+
+ }
+
+
+
+
+
+
+/*SIRVE PARA MOSTRAR LOS VALORES DE N VALORES CIRCULOS */
+ 
+.encu-vista-n{
+  width: 100%;
+  text-align: center;
+  /*border:5px rgb(162, 255, 105) solid;*/
+} 
+
+
+.encu-vista-n-valores{
+ border: 3px rgb(0, 187, 172) solid;
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  margin: 3px;
+  padding: 5px;
+  font-size: 1.1em;
+ 
+}
+
+
+
+
+/*SIRVE PARA MOSTRAR LOS VALORES DE N VALORES CIRCULOS TEXTO*/
+ 
+.encu-vista-texto-n{
+  width: 100%;
+  text-align: center;
+/*  border:5px rgb(162, 255, 105) solid;*/
+} 
+
+
+.encu-vista-texto-n-valores{
+  border: 3px rgb(0, 187, 172) solid;
+  border-radius: 10px;
+  height: 100px;
+  width: 90px;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  margin: 3px;
+  padding: 5px;
+  font-size: 1.1em;
+
+  word-wrap: break-word;
+  vertical-align: middle;
+ 
+}
+
+
+
+
+
+
+
+
+/*SIRVE PARA MOSTRAR LOS VALORES DE MULTIPLE VALORES PENDIENTE */
+
+.encu-vista-multi{
+  display: none;
+}
+
+
+
+
+/*SIRVE PARA MOSTAR ESTILOS DE MULTI N , RESPUESTAS */
+.encu-multi-n{
+
+}
+
+
+.encu-multi-n-valores{
+  border: 3px rgb(0, 187, 172) solid;
+  border-radius: 10px;
+  min-height: 30px;
+  min-width: 10px;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  padding: 7px;
+  margin: 3px;
+}
+
+
+
+
+
+
+/*SIRVE PARA MOSTAR ESTILOS DE MULTI N , RESPUESTAS */
+.encu-vista-final{
+  font-weight: 900;
+
+}
+
+
+
+
+
+
+
+/*Estilos pra vista movil o reducida*/
+@media screen and (max-width:1120px){
+   
+  .encuesta_div{
+    margin: auto;
+    margin-top: 50px;
+    max-width: 800px;
+    height: 500px;
+  /*  border:5px blue solid !important;*/
+    background-color: white;
+    
+  }
+
+
+
+  .cuerpo_encuesta{
+   /* border:5px red solid !important;*/
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+  }
+  
+  
+  .imagen_encuesta{
+   /* border:5px red solid !important;*/
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    margin-top: -200px;
+    /*margin: auto;*/
+    background-color: gray;
+    /*background-image: url("../../../assets/imagenes/Encuesta/aquabro.png");*/
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+  }
+  
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Estilos pra vista movil o reducida*/
+ @media screen and (max-width:770px){
+   
+  .encuesta_div{
+    margin: auto;
+    margin-top: 50px;
+    max-width: 90%;
+    height: 800px;
+    /*border:5px blue solid !important;*/
+    background-color: white;
+     
+  }
+
+
+  .imagen_encuesta{
+    /*border:5px red solid !important;*/
+    margin: auto;
+    width: 100%;
+    height: 500px;
+    background-position: top;
+    /*background-position: center;*/
+  }
+
+
+  .cuerpo_encuesta{
+   /* border:5px black solid !important;*/
+    margin: auto;
+    width: 100%;
+    height: 485px;
+  }
+
+
+  
+
+}
+
+
+/*FIN ESTILOS PARA LA ENCUESTA ARQUITECTO MARVIN*/
+
+
+/*ESTILO EL FORM BERNA*/
+
+
+.FORMtablaB{
+  width: 90%;
+  border:3px black solid !important;
+  font-size: 12px;
+  margin: auto;
+  
+  }
+  
+
+  .FORMinput{
+    width: 98%;
+    height: 30px;
+    margin: auto;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    background-color: white;
+    }
+
+ /*   .FORMtablaB tr{
+      border:5px rgb(216, 21, 21) solid !important;
+  }
+
+  .FORMtablaB td{
+    border:5px rgb(13, 24, 184) solid !important;
+}
+*/
+
+/*Clase para TR1*/
+.clasRedi
+{
+ display:inline-block;
+ padding:5px;
+ margin: auto;
+ font-size: 11.5px;
+
+ 
+}
+
+
+.FORMinputDATE{
+  width: 25%;
+  height: 30px;
+  margin: auto;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  }
+  
+
+  
+/*Input con Button de busqueda*/
+.clasRediC
+{
+ display:inline-block;
+ padding:5px;
+ width: 10%;
+ margin: auto;
+ font-size: 11.5px;
+ border: #0d5fda 3px solid;
+}
+
+.FORMinputC{
+  width: 18%;
+  height: 30px;
+  margin: auto;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  background-color: white;
+  }
+
+
+/*Input de busqueda*/
+  .FORMinputB{
+    width: 10%;
+    height: 30px;
+    margin: auto;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    background-color: white;
+    }
+
+    .FORMinputB1{
+      width: 250px;
+      height: 30px;
+      margin: auto;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      background-color: white;
+      }
+
+
+  /*--------------*/
+
+.Iconos{
+  font-family: "bootstrap-icons"
+}
+  /*Tabla doc sae*/
+
+
+
+
+  /*Iput de text Area*/
+  .FORMinputA{
+    width: 400px;
+    height: 50px;
+    margin: auto;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    background-color: white;
+    }
+
+/*Estilos pra vista movil o reducida*/
+@media screen and (max-width:720px){
+   
+ 
+  .clasRedi
+{
+ display:inline-block;
+ padding:5px;
+ width: 100%;
+ margin: auto;
+ font-size: 11.5px;
+ /*border: #ccda0d 3px solid;*/
+}
+
+
+
+  .clasRediC
+  {
+   display:inline-block;
+   padding:5px;
+   width: 50%;
+   margin: auto;
+   font-size: 11.5px;
+  /* border: #ccda0d 3px solid;*/
+  }
+
+/* ESTLO PARA BOTON VER DEL MODULO DE VISTA DE ORDNES CREADAS*/
+
+/*Estilo en los thead*/
+.EncaOC{ 
+  vertical-align: medium;
+  text-align: left;
+  height: 7.5% ;
+}
+
+/* Color de encabezado que distinga los apartados*/
+
+
+
+
+.encu-ORD{
+  word-break: break-all;
+  width: 50px;
+}
+
+
+/*Clase para TR1*/
+.clasRedi
+{
+ display:inline-block;
+ padding:5px;
+ margin: auto;
+ font-size: 11.5px;
+
+ 
+}
+
+
+
+/*PARA TITULOS*/
+/**/
+}
+
+
+.colorEncaS
+{
+  
+   font-size: medium !important;
+   color: #009ba8 !important;
+   min-height: 50px;
+   
+
+}
+
+
+.colorEnca
+{
+  
+   font-size: medium !important;
+   color: #009ba8 !important;
+   text-align: left; 
+   min-height: 50px;
+   
+
+}
+
+
+.colorT
+{
+ color: #080a0a ;
+ text-align: left; 
+ font-size: medium !important;
+ min-height: 50px;
+}
+
+
+.TEXTO{
+  word-wrap: break-word;
+  width: 225px;
+}
+
+
+.colorINF
+{
+ color: #080a0a ;
+ text-align: left; 
+ font-size: medium !important;
+ /*background-color:#a8f1f8 !important;*/
+ min-height: 50px;
+}
+
+.encaTable
+{
+  background-color: #009ba8;
+  color:white;
+}
+
+
+.divtableorden{
+  align:left;
+  width: 100%;
+}
+
+.TableAUT{
+  align:left ;
+  width: 100%;
+  height: 100%;
+}
+
+.TEXTO1{
+  word-wrap: break-word;
+  width: 200px;
+}
+
+.swalBord
+{
+   width: 90%;
+   align:center;
+}
+
+
+
+
+
+
+/**/
+@media screen and (max-width:700px){
+  .colOcultadiv{
+    display: none;
+    width: 0%;
+  }
+
+ /*.divtableordenOC{
+    display: inline-block;
+    margin: auto;
+    margin-top: 0px;
+    width:5px;
+    border: 0px red solid;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  */
+  
+
+  
+}
+@media  screen and(min-width:768px)and (max-width:990px){
+  .colOcultadiv{
+    
+    width: 10%;
+  }
+ 
+ 
+  .colclie{
+    
+    width: 10%;
+  }
+  
+  
+}
+@media  screen and(min-width:991px){
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*INICIO TABLA GENERICA MOSTRAR MUCHOS DATOS ORDEN Y VISTA DESPLEGABLE*/
+
+/*ESTILOS TABLA PRIN*/
+
+
+.Testilodiv{
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px; 
+  width: 90%;
+  margin: auto;
+}
+
+
+.Tgenerica{
+
+  width: 95%;
+  border: 4px black solid;
+  margin: auto;
+}
+
+.Tgenerica tr{
+  vertical-align: top;
+}
+
+.Tgenerica td{
+  min-height: 70px;
+  vertical-align: top;
+}
+
+
+ 
+
+/*ESTILOS TABLA SECU INFO DATA*/
+
+/*sub tabla datos campos*/
+.Telemento{
+  word-break:break-all;
+  /*border: 2px red solid;*/
+  margin: auto;
+  min-height: 50px;
+  vertical-align: top;
+}
+
+
+/*titulo sub tabla datos */
+.Tdtitu{
+  font-weight: 900;
+}
+
+/*sub tabla datos */
+.Tgsubtabla{
+  width: 100%;
+ 
+  background-color: #080a0a;
+  color: white;
+  vertical-align: middle;
+
+}
+
+.Tgsubtabla tr{
+  vertical-align: middle;
+  
+}
+
+.Tgsubtabla td{
+  vertical-align: middle;
+  
+}
+
+
+
+/*campos fijos*/
+.Tddinam{
+  width: 2%;
+  /*border: 2px green solid;*/
+}
+
+.NoHiddT{
+  visibility: hidden;
+  height: 2px !important;
+  width: 100%;
+  /*background-color: rgb(30, 210, 14);
+  border: 2px rgb(25, 0, 255) solid;*/
+}
+
+.TTtable{
+  height: 0px !important;
+  /*border: 2px red solid;*/
+  visibility: hidden;
+ 
+}
+
+.TTtable td{
+  visibility: hidden;
+
+}
+
+.TTtable tr{
+  visibility: hidden;
+  height: 0px;
+}
+
+.Nohid1{
+  
+}
+.Nohid2{
+  
+  
+}
+.Nohid3{
+   
+}
+.Nohid4{
+   
+}
+
+
+
+/*Estilos par amostrar historia de backorder facturas */
+.ThistoryBO{
+  width: 100%;  
+  min-height: 100px;
+  background-color: white;
+  border: 2px red solid;
+}
+
+
+
+
+@media screen and (max-width:1500px){
+
+    .hid1{
+      display: none;
+    }
+
+    .Nohid1{
+
+    }
+
+    .NoHiddT{
+      height: 200px;
+      visibility: visible;
+    }
+
+    .TTtable{
+      width: 300px;
+      height: 0%;
+      /*background-color: red;*/
+      visibility:hidden;
+    }
+
+}
+
+
+
+@media screen and (max-width:1000px){
+  
+  .hid2{
+    display: none;
+  }
+
+  .Nohid2{
+ 
+  }
+}
+
+
+@media screen and (max-width:500px){
+  
+  .hid3{
+    display: none;
+  }
+
+  .Nohid3{
+ 
+  }
+}
+
+
+@media screen and (max-width:250px){
+  
+  .hid4{
+    display: none;
+  }
+
+  .Nohid4{
+ 
+  }
+}
+
+/*FIN TABLA GENERICA MOSTRAR MUCHOS DATOS ORDEN Y VISTA DESPLEGABLE*/
+
+
+
+
+
+
+
+
+
+
+/*inicio Estilos para update cliente encuesta arqui*/
+.updCliw{
+  width:5% ;
+
+}
+
+
+.updateTablaClie tr{
+  min-height: 60px;
+}
+
+.camposUpdateCliente{
+  font-size: 0.8em;
+}
+
+
+
+/*fin Estilos para update cliente encuesta arqui*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*inicio Estilos para update cliente encuesta arqui*/
+.trC{
+  width: 4% !important;
+  /*border: 2px red solid;*/
+}
+
+
+.headerUp{
+
+}
+
+/*fin Estilos para update cliente encuesta arqui*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

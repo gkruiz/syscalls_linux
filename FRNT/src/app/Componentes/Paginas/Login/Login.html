@@ -1,0 +1,122 @@
+<div class="monitor-overview">
+   
+    <div class="overview-item">
+      <div style="height: 120px;"></div>
+      <div id="chart">
+        <apx-chart
+          [series]="ram_chart.series"
+          [chart]="ram_chart.chart"
+          [labels]="ram_chart.labels"
+          [responsive]="ram_chart.responsive"
+        ></apx-chart>
+      </div>
+      <div style="height: 120px;"></div>
+      <div class="overview-label">Total RAM</div>
+      <div class="overview-value">{{totalRam}}</div>
+    </div>
+
+
+
+    <div class="overview-item">
+      <apx-chart
+              [series]="ram_line.series"
+              [chart]="ram_line.chart"
+              [xaxis]="ram_line.xaxis"
+              [dataLabels]="ram_line.dataLabels"
+              [title]="ram_line.title"
+              [stroke]="ram_line.stroke"
+              [grid]="ram_line.grid"
+            ></apx-chart>
+      <div class="overview-label">RAM Usada</div>
+      <div class="overview-value">{{usedRam}}</div>
+    </div>
+
+
+    <div class="overview-item">
+      <div style="height: 120px;"></div>
+      <div id="chart">
+        <apx-chart
+          [series]="cpu_chart.series"
+          [chart]="cpu_chart.chart"
+          [labels]="cpu_chart.labels"
+          [responsive]="cpu_chart.responsive"
+        ></apx-chart>
+      </div>
+      <div style="height: 120px;"></div>
+      <div class="overview-label">Carga CPU</div>
+      <div class="overview-value">{{cpuLoad}}</div>
+    </div>
+
+
+    <div class="overview-item">
+      <apx-chart
+              [series]="cpu_line.series"
+              [chart]="cpu_line.chart"
+              [xaxis]="cpu_line.xaxis"
+              [dataLabels]="cpu_line.dataLabels"
+              [title]="cpu_line.title"
+              [stroke]="cpu_line.stroke"
+              [grid]="cpu_line.grid"
+            ></apx-chart>
+      <div class="overview-label">Procesos Activos</div>
+      <div class="overview-value">{{activeProcesses}}</div>
+    </div>
+    <div class="overview-item">
+      <apx-chart
+              [series]="ene_line.series"
+              [chart]="ene_line.chart"
+              [xaxis]="ene_line.xaxis"
+              [dataLabels]="ene_line.dataLabels"
+              [title]="ene_line.title"
+              [stroke]="ene_line.stroke"
+              [grid]="ene_line.grid"
+            ></apx-chart>
+      <div class="overview-label">Energia Usada</div>
+      <div class="overview-value">{{useEner}}</div>
+    </div>
+
+
+  </div>
+  
+  <div class="table-container">
+    <h2 class="table-title">Monitor de Procesos</h2>
+    <button (click)="redirecciona('/inicio')" style="display: inline-block;">Regresar</button>
+    <table class="process-table">
+      <thead>
+        <tr>
+          <th>PID</th>
+          <th>Nombre</th>
+          <th>CPU U</th>
+          <th>RAM KB</th>
+          <th>Prioridad</th>
+          <th>Inicio S</th>
+          <th>UID</th>
+          <th>Consumo Energia U</th>
+
+          <th>Ver</th>
+          <th>Terminar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let process of processes">
+          <td>{{ process.PID }}</td>
+          <td>{{ process.Name }}</td>
+          <td>{{ process.CPUUsage }}</td>
+          <td>{{ process.RamUsageKB }} </td>
+          <td>{{ process.Priority }}</td>
+          <td>{{ process.StartTime }} </td>
+          <td>{{ process.UID }} </td>
+          <td>{{ process.Energy }} </td>
+          <td>
+            <button class="details-button" (click)="showDetails(process.PID)" >Ver</button>
+          </td>
+          <td>
+            <button class="details-button" (click)="killProcess(process.PID)"  >Terminar</button>
+          </td>
+        </tr>
+        <tr *ngIf="processes.length === 0">
+          <td colspan="7" class="no-data">No hay procesos activos para mostrar.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

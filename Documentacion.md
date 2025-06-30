@@ -335,41 +335,41 @@ cuando ya terminamos nuestra api procedemos a consumirla desde nuestra vista , p
 ahora mostraremos como quedo la interfaz implementando no solo la syscall de kill process sino tambien las otras llamadas que fueron solicitadas 
 
 ##### 1) Vista Inicial
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG1.png" width="600px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG1.png" width="600px" align="center">
 
 nos muestra la cantidad de ram total usada en nuestro sistema en tiempo real, ademas de que nos muestra lo mismo pero para el cpu , ademas de eso nos da la cantidad de procesos activos 
 
 ##### 2) Vista RAM
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG2.png" width="600px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG2.png" width="600px" align="center">
 
 aca tenemos el grafico de lineas para mostrar el historial de RAM de nuestro sistema donde si fluctua pues esto se vera reflejado en el grafico
 
 
 ##### 3) Vista CPU
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG3.png" width="600px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG3.png" width="600px" align="center">
 
 aca tenemos el grafico de lineas para mostrar el historial de CPU de nuestro sistema donde si fluctua pues esto se vera reflejado en el grafico
 
 
 ##### 4) Vista RX y TX
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG4.png" width="600px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG4.png" width="600px" align="center">
 
 aca tenemos el grafico de lineas para mostrar el historial de RX (KB recibidos) y TX (KB transmitidos) de nuestro sistema donde si fluctua pues esto se vera reflejado en el grafico
 
 ##### 5) Dashboard Procesos
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG5.png" width="600px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG5.png" width="600px" align="center">
 
 aca tenemos el dashboard para mostrar la informacion individual de los procesos, para nuestro caso mostramos el % de RAM usado en el momento , tambien % de RAM en el tiempo , % de CPU usado en el momento , % de CPU usado en el tiempo y por ultimo la cantidad de energia usada en el tiempo 
 
 
 ##### 6) Dashboard Procesos Listado
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG6.png" width="600px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG6.png" width="600px" align="center">
 
 tambien tenemos el listado de los procesos donde podremos ver lo que es el PID , Nombre, CPU, RAM , Prioridad ,Inicio del proceso , UID y por ultimo el consumo de energia, para poder visualizar la info de nuestro proceso en los dashboard solo tendremos que dar click en ver para que nos carque los cambios 
 
 
 ##### 7) Terminar Proceso
-<img src="https://gitlab.com/ingenieria.usac/sistemas/so2/mapa/-/raw/201603009/Proyecto1_1S2025/IMAGENES/IMG7.png" width="600px" align="center">
+<img src="https://github.com/gkruiz/syscalls_linux/blob/main/IMAGENES/IMG7.png" width="600px" align="center">
 
 luego para terminar un proceso ,tendremos que dar click en terminar y automaticamente este se terminara en nuestro sistema y nos mostrara el mensaje que tiene la imagen 
 

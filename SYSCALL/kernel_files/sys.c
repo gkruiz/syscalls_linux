@@ -77,8 +77,7 @@
 
 #include "uid16.h"
 
-//#include "sys_prueba_9.c"
-//#include "proceso_simple.c"
+ 
 #include "syscalls_usac.c"
 
 
@@ -182,13 +181,20 @@ EXPORT_SYMBOL(fs_overflowgid);
  */
 
 
+ /*Declaracion de las syscalls en el archivo sys.c 
+ 
+ 1) importamos el archivo syscalls_usac.c 
+ #include "syscalls_usac.c"
 
-//asmlinkage long sys_hola_mundo(void);
+ 2) declaramos las syscalls que tengamos creadas en el archivo syscalls_usac.c
+ 3) tenemos que usar los parametros que usamos en la syscall original
+ 3) estos parametros los colocamos en el formato del kernel 
+ OK: unsigned long __user *rx_bytes  
+ NO: unsigned long rx_bytes
+ 4) las syscalls deben de inicar con el prefijo sys	
 
-
-
-//asmlinkage long sys_get_net_traffic(struct net_stats __user *user_stats);
-
+ 
+ */
 
 asmlinkage long sys_get_proc_info(struct proc_info __user *info, int __user *num_procs);
 

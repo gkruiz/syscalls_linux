@@ -1,0 +1,15 @@
+#Informacion de la Carpeta:
+
+#para esta carpeta temenos 2 carpetas:
+
+/kernel_files
+/test_programs
+
+#Carpeta /kernel_files
+#
+#En esta carpeta temenos todos los archivos kenel necesarios para integrar una Nueva syscall a nuestro systema , unicamente tendremos que modificar cada archive como corresponde para asi puede se llamada y usada la syscall
+
+
+#Carpeta /test_programs
+#
+#Esta carpeta temenos lo archivos .c necesarios para poder hacer pruebas en el espacio de usuario , con nuestra syscall creada en el Sistema , la syscall se carga al espacio de kernel y para poder usarla temenos estos programas de espacio de usuario

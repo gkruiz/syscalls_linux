@@ -431,17 +431,29 @@
 547	x32	pwritev2		compat_sys_pwritev64v2
 
 
-#548 common hola_mundo sys_hola_mundo
+#Implementacion de las syscalls 
+#Se debe asignar un numero que continue la serie que esta en el archivo
+#La estructura de la llamada es la siguiente:
+#
+#Numero de la syscall   |    common     |    nombre de la syscall   |  nuevo nombre asignado en el systema
+#
+#El nombre de la syscall es el que colocamos en el aca:
+#
+#SYSCALL_DEFINE1(kill_process_by_pid, pid_t, pid)
+#{
+#
+#El nuevo nombre , por facilidad se usa el mismo unicamente agregandole sys al inicio
+#
+#552 common kill_process_by_pid  sys_kill_process_by_pid
+
+
+
+
 
 549 common proceso_simple sys_proceso_simple
-
-
 551 common get_proc_info   sys_get_proc_info
-
 552 common kill_process_by_pid  sys_kill_process_by_pid
-
 553 common  get_network_stats   sys_get_network_stats
-
 554    common    sysinfo_usage    sys_sysinfo_usage
 
 

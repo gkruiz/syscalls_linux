@@ -1,0 +1,41 @@
+#INFORMACION
+
+#Esta carpeta contiene los archivos:
+
+#sys.c
+#syscall_64.tbl
+#syscalls.h
+#syscalls_usac.c
+
+
+
+Archivo sys.c  
+
+es el archivo sys.c es el archivo principal de las llamas al systema, en el podemos crear nuestras syscalls , ya sea de manera directa o a traves de un archivo 
+
+
+
+Archivo syscall_64.tbl
+
+es la table de syscalls , en el declaramos el numero de la syscall y colocamos su declaracion
+
+
+
+Archivo syscalls.h
+
+este archivo contiene las declaraciones de las syscalls, en el unicamente tendremos que poner en encabezado de la syscall y sus parametros 
+
+
+
+Archivo syscalls_usac.c
+
+en el temenos el contenido de nuestras syscalls, este esta en un archivo aparte para diferenciar major cuales syscalls son nuestras y cuales son las del kernel original
+
+
+
+
+
+
+
+
+

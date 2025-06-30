@@ -26,9 +26,7 @@
 
 
 
-/*
-SYSCALL PARA OBTENER EL TRAFICO EN RED TIEMPO REAL 
-*/
+/*SYSCALL PARA OBTENER EL TRAFICO EN RED TIEMPO REAL */
 SYSCALL_DEFINE2(get_network_stats, unsigned long __user *, rx_bytes,
                                unsigned long __user *, tx_bytes)
 {
@@ -73,10 +71,7 @@ SYSCALL_DEFINE2(get_network_stats, unsigned long __user *, rx_bytes,
 
 
 
-/*
-SYSCALL PARA TERMINAR PROCESO POR PID
-*/
-
+/*SYSCALL PARA TERMINAR PROCESO POR PID*/
 
 SYSCALL_DEFINE1(kill_process_by_pid, pid_t, pid)
 {
@@ -102,16 +97,14 @@ SYSCALL_DEFINE1(kill_process_by_pid, pid_t, pid)
 
  
 
-/*
-SYSCALL PARA OBTENER PROCESOS CON INFORMACION BASICA
-*/
+/*SYSCALL PARA OBTENER PROCESOS CON INFORMACION BASICA*/
 struct proc_info2 {
     pid_t pid;
     char name[TASK_COMM_LEN];
     uid_t uid;
     unsigned long ram_usage_kb;
     int priority;
-    unsigned long cpu_usage; // no perfecto, solo a modo de ejemplo
+    unsigned long cpu_usage;  
     unsigned long start_time;
 };
 
@@ -149,7 +142,11 @@ SYSCALL_DEFINE2(get_proc_info, struct proc_info2 __user *, info, int __user *, n
 
 
 
-/*SYSCALL PARA OBTENER INFORMAICON GENERAL DE SISTEMA*/
+
+
+
+
+/*SYSCALL PARA OBTENER INFORMACION GENERAL DE SISTEMA*/
 
 SYSCALL_DEFINE2(sysinfo_usage, unsigned int __user *, cpu_usage, unsigned int __user *, ram_usage)
 {
@@ -180,7 +177,6 @@ SYSCALL_DEFINE2(sysinfo_usage, unsigned int __user *, cpu_usage, unsigned int __
     if (total_jiffies > 0)
         cpu_percent = (work_jiffies * 100) / total_jiffies;
     
-    // Obtener uso de RAM
     si_meminfo(&mem_info);
     
     unsigned long total_ram = mem_info.totalram * mem_info.mem_unit;
@@ -189,8 +185,7 @@ SYSCALL_DEFINE2(sysinfo_usage, unsigned int __user *, cpu_usage, unsigned int __
     
     if (total_ram > 0)
         ram_percent = 100 - ((free_ram + buffer_ram) * 100 / total_ram);
-    
-    // Copiar a espacio de usuario
+
     if (copy_to_user(cpu_usage, &cpu_percent, sizeof(unsigned int)))
         return -EFAULT;
     
@@ -202,26 +197,28 @@ SYSCALL_DEFINE2(sysinfo_usage, unsigned int __user *, cpu_usage, unsigned int __
 
 
 
-/*SYSCALL PARA OBTENER INICO DEL PROCESO SIMPLE SOLO PARA PRUEBAS */
 
 
 
-// archivo: process_info.h
+
+/*SYSCALL PARA OBTENER INFORMACION DEL PROCESO SIMPLE SOLO PARA PRUEBAS */
+
 #ifndef PROCESS_INFO_H
 #define PROCESS_INFO_H
 
 #define MAX_NAME_LEN 256
 
+//Estructura para guardar informacion
 struct process_info {
     pid_t pid;
     char name[MAX_NAME_LEN];
-    unsigned long start_time; // en segundos desde boot
+    unsigned long start_time;  
 };
 
 #endif
 
 
-
+//Syscall para obtener informacion de un proceso
 SYSCALL_DEFINE2(proceso_simple, struct process_info __user *, user_buf, int, max_entries)
 {
     struct task_struct *task;
@@ -234,7 +231,7 @@ SYSCALL_DEFINE2(proceso_simple, struct process_info __user *, user_buf, int, max
         info.pid = task->pid;
         strncpy(info.name, task->comm, MAX_NAME_LEN);
         //info.start_time = (unsigned long)(ktime_to_ns(task->start_time) / NSEC_PER_SEC);
-        unsigned long boot_time = ktime_get_boottime_seconds(); // tiempo actual desde boot
+        unsigned long boot_time = ktime_get_boottime_seconds();  
         unsigned long proc_start_secs = task->start_time / NSEC_PER_SEC;
         info.start_time = boot_time - proc_start_secs;
         
@@ -245,7 +242,7 @@ SYSCALL_DEFINE2(proceso_simple, struct process_info __user *, user_buf, int, max
         count++;
     }
 
-    return count; // número de procesos copiados
+    return count;  
 }
 
 
